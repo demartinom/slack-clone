@@ -2,7 +2,7 @@ import React from "react";
 import { NavBarStyled, Navigation } from "../../styles/NavBar.styled";
 import logo from "../../public/assets/logo.svg";
 import Image from "next/image";
-
+import { AiOutlineSearch } from "react-icons/ai";
 export default function NavBar() {
   return (
     <NavBarStyled>
@@ -14,6 +14,7 @@ export default function NavBar() {
         <li>Resources</li>
         <li>Pricing</li>
       </Navigation>
+        <AiOutlineSearch />
     </NavBarStyled>
   );
 }
