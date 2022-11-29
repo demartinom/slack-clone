@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { Button } from "./SharedStyles.styled";
 
 export const NavBarStyled = styled.nav`
   height: 2.75rem;
@@ -7,6 +8,10 @@ export const NavBarStyled = styled.nav`
   display: flex;
   justify-content: space-between;
   align-items: center;
+  h3 {
+    color: white;
+    font-size: 0.9rem;
+  }
   svg {
     color: white;
     width: 20px;
@@ -24,3 +29,9 @@ export const Navigation = styled.ul`
     font-size: 0.9rem;
   }
 `;
+
+export const ButtonContainer = styled.div`
+  display: flex;
+`;
+
+export const NavButton = styled(Button)``;
