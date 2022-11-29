@@ -1,6 +1,19 @@
 import React from "react";
-import { HeroStyled } from "../../styles/Hero.styled";
-
+import { HeroStyled, HeroText } from "../../styles/Hero.styled";
+import { PurpleBackButton } from "../../styles/SharedStyles.styled";
 export default function Hero() {
-  return <HeroStyled></HeroStyled>;
+  return (
+    <HeroStyled>
+      <HeroText>
+        <h1>
+          Great teamwork starts with a <span>digital HQ</span>
+        </h1>
+        <p>
+          With all your people, tools and communication in one place, you can
+          work faster and more flexibly than ever before.
+        </p>
+        <PurpleBackButton>TRY FOR FREE</PurpleBackButton>
+      </HeroText>
+    </HeroStyled>
+  );
 }
