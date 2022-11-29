@@ -43,10 +43,20 @@ const GlobalStyles = createGlobalStyle`
   }
 `;
 
-export const Button = styled.div`
+export const Button = styled.a`
   background-color: ${(props) =>
     props.primary ? "var(--color-aubergine)" : "white"};
   color: ${(props) => (props.primary ? "white" : "var(--color-aubergine)")};
+  border: ${(props) => (props.primary ? "1px solid blue" : "1px solid green")};
+  border-radius: 0.25rem;
+  font-weight: 700;
+  font-size: 0.9rem;
+  padding: 12px 16px;
+`;
+
+export const PurpleBackButton = styled(Button)`
+  border: ${(props) =>
+    props.primary ? "1px solid white" : "1px solid var(--color-aubergine)"};
 `;
 
 export default GlobalStyles;
