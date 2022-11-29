@@ -1,8 +1,14 @@
 import React from "react";
-import { NavBarStyled, Navigation } from "../../styles/NavBar.styled";
+import {
+  NavBarStyled,
+  Navigation,
+  ButtonContainer,
+} from "../../styles/NavBar.styled";
 import logo from "../../public/assets/logo.svg";
 import Image from "next/image";
 import { AiOutlineSearch } from "react-icons/ai";
+import { Button } from "../../styles/SharedStyles.styled";
+
 export default function NavBar() {
   return (
     <NavBarStyled>
@@ -14,7 +20,11 @@ export default function NavBar() {
         <li>Resources</li>
         <li>Pricing</li>
       </Navigation>
-        <AiOutlineSearch />
+      <AiOutlineSearch />
+      <h3>Sign In</h3>
+      <ButtonContainer>
+        
+      </ButtonContainer>
     </NavBarStyled>
   );
 }
