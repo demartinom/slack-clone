@@ -1,26 +1,27 @@
 import styled from "styled-components";
-import { Button } from "./SharedStyles.styled";
 
 export const NavBarStyled = styled.nav`
-  height: 2.75rem;
+  height: 5rem;
   background-color: var(--color-aubergine);
-  padding: 0 44px;
+  padding: 0 6.5rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  width: 100%;
   h3 {
     color: white;
     font-size: 0.9rem;
   }
   svg {
     color: white;
-    width: 20px;
-    height: 20px;
+    width: 1.25rem;
+    height: 1.25rem;
   }
 `;
 
 export const Navigation = styled.ul`
   display: flex;
+  align-items: center;
   list-style: none;
   gap: 1.75rem;
   li {
@@ -32,6 +33,6 @@ export const Navigation = styled.ul`
 
 export const ButtonContainer = styled.div`
   display: flex;
+  align-items: center;
+  gap: 3rem;
 `;
-
-export const NavButton = styled(Button)``;
