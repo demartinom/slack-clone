@@ -1,6 +1,7 @@
 import React from "react";
-import { HeroStyled, HeroText } from "../../styles/Hero.styled";
+import { HeroStyled, HeroText, VideoContainer } from "../../styles/Hero.styled";
 import { PurpleBackButton } from "../../styles/SharedStyles.styled";
+
 export default function Hero() {
   return (
     <HeroStyled>
@@ -14,6 +15,9 @@ export default function Hero() {
         </p>
         <PurpleBackButton>TRY FOR FREE</PurpleBackButton>
       </HeroText>
+      <VideoContainer>
+        <video controls src="/assets/videos/teamwork.mp4"></video>
+      </VideoContainer>
     </HeroStyled>
   );
 }
