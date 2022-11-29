@@ -7,6 +7,11 @@ export const NavBarStyled = styled.nav`
   display: flex;
   justify-content: space-between;
   align-items: center;
+  svg {
+    color: white;
+    width: 20px;
+    height: 20px;
+  }
 `;
 
 export const Navigation = styled.ul`
