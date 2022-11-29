@@ -43,4 +43,10 @@ const GlobalStyles = createGlobalStyle`
   }
 `;
 
+export const Button = styled.div`
+  background-color: ${(props) =>
+    props.primary ? "var(--color-aubergine)" : "white"};
+  color: ${(props) => (props.primary ? "white" : "var(--color-aubergine)")};
+`;
+
 export default GlobalStyles;
