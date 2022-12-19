@@ -8,14 +8,17 @@ export const HeroStyled = styled.div`
     color: white;
     max-width: 41rem;
     font-size: 4rem;
-  }
-  span {
-    color: var(--color-yellow);
+    span {
+      color: var(--color-yellow);
+    }
   }
   P {
     font-size: 1.25rem;
     color: white;
     max-width: 34rem;
+    span {
+      font-weight: 700;
+    }
   }
 `;
 
@@ -28,7 +31,7 @@ export const HeroText = styled.div`
 export const VideoContainer = styled.div`
   width: 700px;
   height: 400px;
-  video{
+  video {
     width: 100%;
     height: 100%;
   }
