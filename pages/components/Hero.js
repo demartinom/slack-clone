@@ -1,5 +1,10 @@
 import React from "react";
-import { HeroStyled, HeroText, VideoContainer } from "../../styles/Hero.styled";
+import {
+  ButtonContainer,
+  HeroStyled,
+  HeroText,
+  VideoContainer,
+} from "../../styles/Hero.styled";
 import { PurpleBackButton } from "../../styles/SharedStyles.styled";
 
 export default function Hero() {
@@ -13,7 +18,12 @@ export default function Hero() {
           With all your people, tools and communication in one place, you can
           work faster and more flexibly than ever before.
         </p>
-        <PurpleBackButton>TRY FOR FREE</PurpleBackButton>
+        <ButtonContainer>
+          <PurpleBackButton>SIGN UP WITH EMAIL</PurpleBackButton>
+        </ButtonContainer>
+        <p>
+          <span>Slack is free to try</span> for as long as you&#39;d like
+        </p>
       </HeroText>
       <VideoContainer>
         <video loop autoPlay muted src="/assets/videos/teamwork.mp4"></video>

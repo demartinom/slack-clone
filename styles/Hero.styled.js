@@ -36,3 +36,5 @@ export const VideoContainer = styled.div`
     height: 100%;
   }
 `;
+
+export const ButtonContainer = styled.div``;
