@@ -16,7 +16,7 @@ export default function Hero() {
         <PurpleBackButton>TRY FOR FREE</PurpleBackButton>
       </HeroText>
       <VideoContainer>
-        <video controls src="/assets/videos/teamwork.mp4"></video>
+        <video loop autoPlay muted src="/assets/videos/teamwork.mp4"></video>
       </VideoContainer>
     </HeroStyled>
   );
