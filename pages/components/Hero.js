@@ -5,7 +5,7 @@ import {
   HeroText,
   VideoContainer,
 } from "../../styles/Hero.styled";
-import { PurpleBackButton } from "../../styles/SharedStyles.styled";
+import { Button, PurpleBackButton } from "../../styles/SharedStyles.styled";
 
 export default function Hero() {
   return (
@@ -20,6 +20,7 @@ export default function Hero() {
         </p>
         <ButtonContainer>
           <PurpleBackButton>SIGN UP WITH EMAIL</PurpleBackButton>
+          <Button>SIGN UP WITH GOOGLE</Button>
         </ButtonContainer>
         <p>
           <span>Slack is free to try</span> for as long as you&#39;d like
