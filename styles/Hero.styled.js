@@ -4,10 +4,17 @@ export const HeroStyled = styled.div`
   background-color: var(--color-aubergine);
   padding-left: 6.5rem;
   display: flex;
+`;
+
+export const HeroText = styled.div`
+  display: flex;
+  flex-direction: column;
+  width: 100%;
   h1 {
     color: white;
     max-width: 41rem;
     font-size: 4rem;
+    line-height: 4.5rem;
     span {
       color: var(--color-yellow);
     }
@@ -20,12 +27,6 @@ export const HeroStyled = styled.div`
       font-weight: 700;
     }
   }
-`;
-
-export const HeroText = styled.div`
-  display: flex;
-  flex-direction: column;
-  width: 100%;
 `;
 
 export const VideoContainer = styled.div`
