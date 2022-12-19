@@ -2,8 +2,9 @@ import styled from "styled-components";
 
 export const HeroStyled = styled.div`
   background-color: var(--color-aubergine);
-  padding-left: 6.5rem;
+  padding: 2rem 0 12rem 6.5rem;
   display: flex;
+  overflow-x: hidden;
 `;
 
 export const HeroText = styled.div`
@@ -30,9 +31,11 @@ export const HeroText = styled.div`
 `;
 
 export const VideoContainer = styled.div`
+  position: relative;
   video {
+    position: absolute;
+    right: -50px;
     width: 700px;
-    height: 400px;
   }
 `;
 
