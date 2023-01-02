@@ -18,4 +18,8 @@ export const Companies = styled.div`
 `;
 
 export const Logos = styled.div`
+  margin-top: 1rem;
+  display: flex;
+  align-items: center;
+  gap: 4rem;
 `;
