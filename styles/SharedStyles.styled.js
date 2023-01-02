@@ -16,6 +16,7 @@ const GlobalStyles = createGlobalStyle`
     --color-aubergine: #4a154b;
     --color-null: #611f69;
     --color-active: #7c3085;
+    --color-beige: #f4ede4;
   }
   body {
     font-family: var(--page-font);
@@ -47,7 +48,8 @@ export const Button = styled.button`
   background-color: ${(props) =>
     props.primary ? "var(--color-aubergine)" : "white"};
   color: ${(props) => (props.primary ? "white" : "var(--color-aubergine)")};
-  border: ${(props) => (props.primary ? "1px solid blue" : "1px solid green")};
+  /* border: ${(props) =>
+    props.primary ? "1px solid blue" : "1px solid green"}; */
   border-radius: 0.25rem;
   font-weight: 700;
   font-size: 0.9rem;
