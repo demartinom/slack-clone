@@ -10,7 +10,7 @@ export const Companies = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding-top: 2rem;
+  padding-top: 3rem;
   p {
     font-size: 0.875rem;
     font-weight: 600;
@@ -18,7 +18,7 @@ export const Companies = styled.div`
 `;
 
 export const Logos = styled.div`
-  margin-top: 1rem;
+  margin-top: 1.5rem;
   display: flex;
   align-items: center;
   gap: 4rem;
