@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const HeroStyled = styled.div`
   background-color: var(--color-aubergine);
-  padding: 2rem 0 12rem 6.5rem;
+  padding: 2rem 0 10rem 6.5rem;
   display: flex;
   overflow-x: hidden;
 `;
