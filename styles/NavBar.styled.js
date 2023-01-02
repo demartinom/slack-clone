@@ -34,5 +34,5 @@ export const Navigation = styled.ul`
 export const ButtonContainer = styled.div`
   display: flex;
   align-items: center;
-  gap: 3rem;
+  gap: 1.5rem;
 `;
