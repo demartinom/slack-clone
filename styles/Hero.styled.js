@@ -16,6 +16,7 @@ export const HeroText = styled.div`
     max-width: 41rem;
     font-size: 4rem;
     line-height: 4.5rem;
+    margin-top: 2rem;
     span {
       color: var(--color-yellow);
     }
