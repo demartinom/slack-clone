@@ -8,8 +8,9 @@ export default function Features() {
     <Image
       key={logo.name}
       src={logo.image}
-      fill
-      alt="company logo"
+      width={logo.width}
+      height={logo.height}
+      alt={`${logo.name} logo`}
     ></Image>
   ));
   return (
