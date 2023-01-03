@@ -24,4 +24,11 @@ export const Logos = styled.div`
   gap: 4rem;
 `;
 
-export const FeatureContainer = styled.div``;
+export const FeatureContainer = styled.div`
+  display: flex;
+  video {
+    width: 600px;
+  }
+`;
+
+export const FeaturesText = styled.div``;
