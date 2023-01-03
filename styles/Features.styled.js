@@ -26,9 +26,22 @@ export const Logos = styled.div`
 
 export const FeatureContainer = styled.div`
   display: flex;
+  align-items: center;
+
   video {
     width: 600px;
   }
 `;
 
-export const FeaturesText = styled.div``;
+export const FeaturesText = styled.div`
+  h1 {
+    font-size: 3rem;
+  }
+  p {
+    font-size: 1.125rem;
+  }
+  a {
+    display: flex;
+    align-items: center;
+  }
+`;
