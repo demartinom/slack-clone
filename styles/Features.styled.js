@@ -23,3 +23,5 @@ export const Logos = styled.div`
   align-items: center;
   gap: 4rem;
 `;
+
+export const FeatureContainer = styled.div``;
