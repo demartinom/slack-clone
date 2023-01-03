@@ -17,6 +17,7 @@ const GlobalStyles = createGlobalStyle`
     --color-null: #611f69;
     --color-active: #7c3085;
     --color-beige: #f4ede4;
+    --color-link: #1264a3
   }
   body {
     font-family: var(--page-font);
