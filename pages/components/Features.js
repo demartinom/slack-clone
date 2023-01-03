@@ -10,6 +10,7 @@ import {
 import logos from "./logosArray";
 import featuresArray from "./featuresArray";
 import Link from "next/link";
+import { BsArrowRight } from "react-icons/bs";
 
 export default function Features() {
   const companyLogos = logos.map((logo) => (
@@ -28,7 +29,9 @@ export default function Features() {
         <FeaturesText>
           <h1>{feature.title}</h1>
           <p>{feature.body}</p>
-          <Link href="">Learn more about {feature.learnMore}</Link>
+          <Link href="">
+            Learn more about {feature.learnMore} <BsArrowRight />
+          </Link>
         </FeaturesText>
       </FeatureContainer>
     ) : (
@@ -36,7 +39,9 @@ export default function Features() {
         <FeaturesText>
           <h1>{feature.title}</h1>
           <p>{feature.body}</p>
-          <Link href="">Learn more about {feature.learnMore}</Link>
+          <Link href="">
+            Learn more about {feature.learnMore} <BsArrowRight />
+          </Link>
         </FeaturesText>
         <video loop autoPlay playsInline muted src={feature.video}></video>
       </FeatureContainer>
