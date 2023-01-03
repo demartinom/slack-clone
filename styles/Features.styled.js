@@ -27,21 +27,30 @@ export const Logos = styled.div`
 export const FeatureContainer = styled.div`
   display: flex;
   align-items: center;
-
+  gap: 9rem;
+  margin: 4rem 0 0 6.5rem;
+  padding-bottom: 3rem;
   video {
     width: 600px;
   }
 `;
 
 export const FeaturesText = styled.div`
+  width: 30rem;
   h1 {
     font-size: 3rem;
+    line-height: 3.5rem;
   }
   p {
     font-size: 1.125rem;
   }
   a {
+    margin-top: 1rem;
     display: flex;
     align-items: center;
+    gap: 0.5rem;
+    font-size: 1.125rem;
+    color: var(--color-link);
+    font-weight: 500;
   }
 `;
