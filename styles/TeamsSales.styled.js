@@ -5,11 +5,15 @@ export const TeamsSalesStyled = styled.div`
   flex-direction: column;
   align-items: center;
   padding: 5rem 0 0 0;
+  position: relative;
   h1 {
     font-size: 3.125rem;
+    margin-bottom: .75rem;
   }
   h3 {
     font-size: 1.125rem;
+    font-weight: 500;
+    margin-bottom: 2rem;
   }
 `;
 
@@ -34,4 +38,6 @@ export const SingleStat = styled.div`
 
 export const ButtonContainer = styled.div`
   display: flex;
+  gap: .5rem;
+  margin-bottom: 5rem;
 `;
