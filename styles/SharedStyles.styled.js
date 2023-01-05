@@ -62,4 +62,7 @@ export const PurpleBackButton = styled(Button)`
     props.primary ? "1px solid white" : "1px solid var(--color-aubergine)"};
 `;
 
+export const ButtonLarge = styled(Button)`
+  padding: 19px 40px 20px 40px;
+`;
 export default GlobalStyles;
