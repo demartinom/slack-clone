@@ -8,7 +8,11 @@ import {
 import { ButtonLarge } from "../../styles/SharedStyles.styled";
 import Image from "next/image";
 import officeEmoji from "../../public/assets/background-emojis/office.png";
-import graph from "../../public/assets/background-emojis/chart.png";
+import chartEmoji from "../../public/assets/background-emojis/chart.png";
+import lockEmoji from "../../public/assets/background-emojis/lock.png";
+import womanEmoji from "../../public/assets/background-emojis/woman.png";
+import skylineEmoji from "../../public/assets/background-emojis/skyline.png";
+import handshakeEmoji from "../../public/assets/background-emojis/handshake.png";
 
 export default function TeamsSales() {
   return (
@@ -43,6 +47,53 @@ export default function TeamsSales() {
           position: "absolute",
           left: "150px",
           top: "40px",
+        }}
+      ></Image>
+      <Image
+        src={chartEmoji}
+        alt="chart"
+        style={{
+          position: "absolute",
+          left: "90px",
+          top: "160px",
+        }}
+      ></Image>
+      <Image
+        src={lockEmoji}
+        alt="lock"
+        style={{
+          position: "absolute",
+          left: "190px",
+          top: "250px",
+        }}
+      ></Image>
+      <Image
+        src={skylineEmoji}
+        alt="skyline"
+        style={{
+          position: "absolute",
+          right: "150px",
+          top: "40px",
+          height: "44px",
+          width: "73px",
+        }}
+      ></Image>
+      <Image
+        src={handshakeEmoji}
+        alt="handshake"
+        style={{
+          position: "absolute",
+          right: "190px",
+          top: "160px",
+        }}
+      ></Image>
+      <Image
+        src={womanEmoji}
+        alt="woman"
+        style={{
+          position: "absolute",
+          right: "90px",
+          top: "250px",
         }}
       ></Image>
     </TeamsSalesStyled>
