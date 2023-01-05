@@ -8,7 +8,7 @@ export const TeamsSalesStyled = styled.div`
   position: relative;
   h1 {
     font-size: 3.125rem;
-    margin-bottom: .75rem;
+    margin-bottom: 0.75rem;
   }
   h3 {
     font-size: 1.125rem;
@@ -38,6 +38,13 @@ export const SingleStat = styled.div`
 
 export const ButtonContainer = styled.div`
   display: flex;
-  gap: .5rem;
+  gap: 0.5rem;
   margin-bottom: 5rem;
+`;
+
+export const Testimonial = styled.div`
+  video {
+    border-top-right-radius: 500px;
+    border-bottom-right-radius: 500px;
+  }
 `;

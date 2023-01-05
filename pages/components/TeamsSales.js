@@ -4,6 +4,7 @@ import {
   Statistics,
   SingleStat,
   ButtonContainer,
+  Testimonial,
 } from "../../styles/TeamsSales.styled";
 import { ButtonLarge } from "../../styles/SharedStyles.styled";
 import Image from "next/image";
@@ -96,6 +97,26 @@ export default function TeamsSales() {
           top: "250px",
         }}
       ></Image>
+      <Testimonial>
+        <video
+          loop
+          autoPlay
+          playsInline
+          muted
+          src="/assets/videos/customer.mp4"
+        ></video>
+        <h2>
+          “We were able to create a large virtual network of employees that can
+          communicate as though they are together. There was a lot of disruption
+          in terms of where we worked, but in terms of how we worked—very little
+          disruption.”
+        </h2>
+        <h4>
+          <span>Mark Smith</span>
+          <br />
+          Senior Technical Product Manager, T-Mobile
+        </h4>
+      </Testimonial>
     </TeamsSalesStyled>
   );
 }
