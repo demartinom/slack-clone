@@ -5,7 +5,10 @@ import {
   SingleStat,
   ButtonContainer,
 } from "../../styles/TeamsSales.styled";
-import { Button } from "../../styles/SharedStyles.styled";
+import { ButtonLarge } from "../../styles/SharedStyles.styled";
+import Image from "next/image";
+import officeEmoji from "../../public/assets/background-emojis/office.png";
+import graph from "../../public/assets/background-emojis/chart.png";
 
 export default function TeamsSales() {
   return (
@@ -16,8 +19,8 @@ export default function TeamsSales() {
         companies.
       </h3>
       <ButtonContainer>
-        <Button primary>MEET SLACK FOR ENTERPRISE</Button>
-        <Button>TALK TO SALES</Button>
+        <ButtonLarge primary>MEET SLACK FOR ENTERPRISE</ButtonLarge>
+        <ButtonLarge>TALK TO SALES</ButtonLarge>
       </ButtonContainer>
       <Statistics>
         <SingleStat>
@@ -33,6 +36,15 @@ export default function TeamsSales() {
           <p>feel more connected to their teams*</p>
         </SingleStat>
       </Statistics>
+      <Image
+        src={officeEmoji}
+        alt="office"
+        style={{
+          position: "absolute",
+          left: "150px",
+          top: "40px",
+        }}
+      ></Image>
     </TeamsSalesStyled>
   );
 }
