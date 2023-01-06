@@ -5,6 +5,8 @@ import {
   SingleStat,
   ButtonContainer,
   Testimonial,
+  TestimonialText,
+  VideoContainer,
 } from "../../styles/TeamsSales.styled";
 import { ButtonLarge } from "../../styles/SharedStyles.styled";
 import Image from "next/image";
@@ -14,7 +16,7 @@ import lockEmoji from "../../public/assets/background-emojis/lock.png";
 import womanEmoji from "../../public/assets/background-emojis/woman.png";
 import skylineEmoji from "../../public/assets/background-emojis/skyline.png";
 import handshakeEmoji from "../../public/assets/background-emojis/handshake.png";
-
+import playButton from "../../public/assets/playButton.svg";
 export default function TeamsSales() {
   return (
     <TeamsSalesStyled>
@@ -98,24 +100,29 @@ export default function TeamsSales() {
         }}
       ></Image>
       <Testimonial>
-        <video
-          loop
-          autoPlay
-          playsInline
-          muted
-          src="/assets/videos/customer.mp4"
-        ></video>
-        <h2>
-          “We were able to create a large virtual network of employees that can
-          communicate as though they are together. There was a lot of disruption
-          in terms of where we worked, but in terms of how we worked—very little
-          disruption.”
-        </h2>
-        <h4>
-          <span>Mark Smith</span>
-          <br />
-          Senior Technical Product Manager, T-Mobile
-        </h4>
+        <VideoContainer>
+          <Image src={playButton} alt="play button"></Image>
+          <video
+            loop
+            autoPlay
+            playsInline
+            muted
+            src="/assets/videos/customer.mp4"
+          ></video>
+        </VideoContainer>
+        <TestimonialText>
+          <h2>
+            “We were able to create a large virtual network of employees that
+            can communicate as though they are together. There was a lot of
+            disruption in terms of where we worked, but in terms of how we
+            worked—very little disruption.”
+          </h2>
+          <h4>
+            Mark Smith
+            <br />
+            <span>Senior Technical Product Manager, T-Mobile</span>
+          </h4>
+        </TestimonialText>
       </Testimonial>
     </TeamsSalesStyled>
   );
