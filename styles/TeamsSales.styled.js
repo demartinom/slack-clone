@@ -20,6 +20,7 @@ export const TeamsSalesStyled = styled.div`
 export const Statistics = styled.div`
   display: flex;
   gap: 13rem;
+  margin-bottom: 8rem;
 `;
 
 export const SingleStat = styled.div`
@@ -43,8 +44,33 @@ export const ButtonContainer = styled.div`
 `;
 
 export const Testimonial = styled.div`
+  display: flex;
+`;
+
+export const VideoContainer = styled.div`
+  position: relative;
   video {
     border-top-right-radius: 500px;
     border-bottom-right-radius: 500px;
+    width: 45rem;
+    cursor: pointer;
+  }
+  img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    cursor: pointer;
+    :hover {
+      filter: brightness(50%);
+    }
+  }
+`;
+
+export const TestimonialText = styled.div`
+  h2 {
+    font-weight: 100;
+    font-style: italic;
   }
 `;
