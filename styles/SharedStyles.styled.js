@@ -26,6 +26,9 @@ const GlobalStyles = createGlobalStyle`
     h3,
     h4 {
       font-weight: 700;
+      line-height: 1.364;
+      letter-spacing: -0.3px;
+
     }
     h1 {
       font-size: 36px;
