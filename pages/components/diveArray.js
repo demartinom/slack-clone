@@ -7,7 +7,7 @@ const diveArray = [
     purple: true,
   },
   {
-    picture: "/assets/deep-dive/resource.png",
+    picture: "/assets/deep-dive/resource.jpeg",
     subject: "Resource",
     title: "See how others are building their digital HQ",
     linkText: "READ MORE",
@@ -21,7 +21,7 @@ const diveArray = [
     purple: false,
   },
   {
-    picture: "/assets/deep-dive/ebook.png",
+    picture: "/assets/deep-dive/ebook.jpeg",
     subject: "E-Book",
     title: "Reinventing work: New imperatives for the future of working",
     linkText: "GET E-BOOK",
