@@ -7,6 +7,7 @@ import {
   Testimonial,
   TestimonialText,
   VideoContainer,
+  Disclaimer,
 } from "../../styles/TeamsSales.styled";
 import { ButtonLarge } from "../../styles/SharedStyles.styled";
 import Image from "next/image";
@@ -17,6 +18,9 @@ import womanEmoji from "../../public/assets/background-emojis/woman.png";
 import skylineEmoji from "../../public/assets/background-emojis/skyline.png";
 import handshakeEmoji from "../../public/assets/background-emojis/handshake.png";
 import playButton from "../../public/assets/playButton.svg";
+import Link from "next/link";
+import { BsArrowRight } from "react-icons/bs";
+
 export default function TeamsSales() {
   return (
     <TeamsSalesStyled>
@@ -122,8 +126,16 @@ export default function TeamsSales() {
             <br />
             <span>Senior Technical Product Manager, T-Mobile</span>
           </h4>
+          <Link href="https://slack.com/customer-stories">
+            See our customer stories <BsArrowRight />
+          </Link>
         </TestimonialText>
       </Testimonial>
+      <Disclaimer>
+        * Weighted average. Based on 2,707 survey responses from weekly Slack
+        users in the U.S., UK, Australia and Canada with a ± 2% margin of error
+        at 95% CI &#40;December 2021&#41;.
+      </Disclaimer>
     </TeamsSalesStyled>
   );
 }
