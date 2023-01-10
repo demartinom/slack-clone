@@ -58,6 +58,7 @@ export const Button = styled.button`
   font-weight: 700;
   font-size: 0.9rem;
   padding: 12px 16px;
+  letter-spacing: 0.8px;
 `;
 
 export const PurpleBackButton = styled(Button)`
