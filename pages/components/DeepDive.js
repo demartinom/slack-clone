@@ -3,7 +3,6 @@ import {
   CardsContainer,
   DeepDiveStyled,
   ImageContainer,
-  LinkContainer,
 } from "../../styles/DeepDive.styled";
 import diveArray from "./diveArray";
 import Image from "next/image";
@@ -32,12 +31,11 @@ export default function DeepDive() {
         </ImageContainer>
         <h3>{card.subject}</h3>
         <h1>{card.title}</h1>
-        <LinkContainer>
-          <Link href="">
-            <h3>{card.linkText}</h3>
-          </Link>
+
+        <Link href="">
+          <h3>{card.linkText}</h3>
           <BsArrowRight />
-        </LinkContainer>
+        </Link>
       </Card>
     )
   );
