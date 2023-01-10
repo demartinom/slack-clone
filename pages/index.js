@@ -5,6 +5,7 @@ import Features from "./components/Features";
 import TeamsSales from "./components/TeamsSales";
 import DeepDive from "./components/DeepDive";
 import PreFoot from "./components/PreFoot";
+import Footer from "./components/Footer";
 
 export default function Home() {
   return (
@@ -15,7 +16,8 @@ export default function Home() {
       <Features />
       <TeamsSales />
       <DeepDive />
-      <PreFoot/>
+      <PreFoot />
+      <Footer />
     </>
   );
 }
