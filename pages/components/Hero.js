@@ -4,8 +4,11 @@ import {
   HeroStyled,
   HeroText,
   VideoContainer,
+  GoogleButton,
 } from "../../styles/Hero.styled";
-import { Button, PurpleBackButton } from "../../styles/SharedStyles.styled";
+import { PurpleBackButton } from "../../styles/SharedStyles.styled";
+import googleLogo from "../../public/assets/google-logo.svg";
+import Image from "next/image";
 
 export default function Hero() {
   return (
@@ -20,7 +23,10 @@ export default function Hero() {
         </p>
         <ButtonContainer>
           <PurpleBackButton>SIGN UP WITH EMAIL</PurpleBackButton>
-          <Button>SIGN UP WITH GOOGLE</Button>
+          <GoogleButton>
+            <Image src={googleLogo} alt="google logo"></Image>SIGN UP WITH
+            GOOGLE
+          </GoogleButton>
         </ButtonContainer>
         <p>
           <span>Slack is free to try</span> for as long as you&#39;d like

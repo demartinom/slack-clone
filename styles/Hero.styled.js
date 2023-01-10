@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { Button } from "./SharedStyles.styled";
 
 export const HeroStyled = styled.div`
   background-color: var(--color-aubergine);
@@ -40,4 +41,24 @@ export const VideoContainer = styled.div`
   }
 `;
 
-export const ButtonContainer = styled.div``;
+export const ButtonContainer = styled.div`
+  display: flex;
+  gap: 8px;
+  margin-top: 4rem;
+  margin-bottom: 1rem;
+`;
+
+export const GoogleButton = styled(Button)`
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  background-color: #4285f4;
+  color: white;
+  padding: 0 16px 0 4px;
+  img {
+    background-color: white;
+    padding: 14px;
+    border-radius: 2px;
+    margin: 3px 0 3px 0;
+  }
+`;
