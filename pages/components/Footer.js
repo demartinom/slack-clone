@@ -71,12 +71,11 @@ export default function Footer() {
       <MetaSocial>
         <PrivacyLinks>
           <Link href="">Status</Link>
-          <Link href="">
-            <Image src={privacy} alt="privacy"></Image>
-            Privacy
-          </Link>
+          <Link href="">Privacy</Link>
           <Link href="">Terms</Link>
-          <Link href="">Your Privacy Choices</Link>
+          <Link href="">
+            <Image src={privacy} alt="privacy"></Image>Your Privacy Choices
+          </Link>
           <Link href="">Cookie Preferences</Link>
           <Link href="">Contact Us</Link>
           <Link href="">
@@ -86,7 +85,7 @@ export default function Footer() {
         </PrivacyLinks>
         <SocialIcons>
           <Link href="">
-            <AiOutlineCloudDownload /> Download Slack
+            <AiOutlineCloudDownload /> <p>Download Slack</p>
           </Link>
           <Link href="">
             <FaTwitterSquare />
