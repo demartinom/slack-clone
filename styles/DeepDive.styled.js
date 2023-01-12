@@ -25,11 +25,11 @@ export const Card = styled.div`
   height: 26.5rem;
   background-color: ${(props) =>
     props.purple ? "var(--color-aubergine)" : "white"};
-  color: ${(props) => (props.purple ? "white" : "black")};
   position: relative;
-  transition: all .25s;
+  transition: all 0.25s;
   h1,
   h3 {
+    color: ${(props) => (props.purple ? "white" : "black")};
     padding: 0 12px;
   }
   h1 {
@@ -42,23 +42,8 @@ export const Card = styled.div`
     margin-top: ${(props) => (props.purple ? "1.5rem" : "2rem")};
   }
   a {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    width: 100%;
-    color: ${(props) => (props.purple ? "white" : "var(--color-link)")};
     text-decoration: none;
-    position: absolute;
-    bottom: 10px;
-    padding-right: 1rem;
-    h3 {
-      font-weight: 700;
-      letter-spacing: 0.8px;
-      margin: 0;
-    }
-    svg {
-      scale: 1.75;
-    }
+    color: ${(props) => (props.purple ? "white" : "var(--color-link)")};
   }
   :hover {
     scale: 1.05;
@@ -73,5 +58,25 @@ export const ImageContainer = styled.div`
   margin-top: ${(props) => (props.purple ? "3rem" : "0rem")};
   img {
     padding: 12px;
+  }
+`;
+
+export const LinkText = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  text-decoration: none;
+  position: absolute;
+  bottom: 10px;
+  padding-right: 1rem;
+  h3 {
+    font-weight: 700;
+    letter-spacing: 0.8px;
+    margin: 0;
+    color: ${(props) => (props.purple ? "white" : "var(--color-link)")};
+  }
+  svg {
+    scale: 1.75;
   }
 `;
