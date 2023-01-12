@@ -52,22 +52,36 @@ export const Button = styled.button`
   background-color: ${(props) =>
     props.primary ? "var(--color-aubergine)" : "white"};
   color: ${(props) => (props.primary ? "white" : "var(--color-aubergine)")};
-  /* border: ${(props) =>
-    props.primary ? "1px solid blue" : "1px solid green"}; */
   border-radius: 0.25rem;
   font-weight: 700;
   font-size: 0.9rem;
   padding: 12px 16px;
   letter-spacing: 0.8px;
+  border: none;
 `;
 
 export const PurpleBackButton = styled(Button)`
-  border: ${(props) =>
+  outline: ${(props) =>
     props.primary ? "1px solid white" : "1px solid var(--color-aubergine)"};
   padding: ${(props) => (props.hero ? "19px 40px 20px 40px;" : "")};
+  outline-offset: 0;
+  transition: all 0.15s;
+  :hover {
+    outline: ${(props) =>
+      props.primary ? "2px solid white" : "2px solid var(--color-aubergine)"};
+    outline-offset: -2px;
+  }
 `;
 
 export const ButtonLarge = styled(Button)`
   padding: 19px 40px 20px 40px;
+  background-color: ${(props) => (props.primary ? "var(--color-null)" : "")};
+  outline: ${(props) => (props.primary ? "" : "1px solid white")};
+  transition: all 0.3s;
+  :hover {
+    background-color: ${(props) =>
+      props.primary ? "var(--color-aubergine)" : "#fff"};
+    outline: ${(props) => (props.primary ? "" : "2px solid var(--color-null)")};
+  }
 `;
 export default GlobalStyles;
