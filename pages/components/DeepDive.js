@@ -3,6 +3,7 @@ import {
   CardsContainer,
   DeepDiveStyled,
   ImageContainer,
+  LinkText,
 } from "../../styles/DeepDive.styled";
 import diveArray from "./diveArray";
 import Image from "next/image";
@@ -14,27 +15,30 @@ export default function DeepDive() {
   const diveMap = diveArray.map((card) =>
     card.purple ? (
       <Card purple key={card.subject}>
-        <h3>{card.subject}</h3>
-        <h1>{card.title}</h1>
-        <ImageContainer purple>
-          <Image src={card.picture} alt="card image" fill></Image>
-        </ImageContainer>
-        <Link href="">
-          <h3>{card.linkText}</h3>
-          <BsArrowRight />
+        <Link href="" key={card.subject}>
+          <h3>{card.subject}</h3>
+          <h1>{card.title}</h1>
+          <ImageContainer purple>
+            <Image src={card.picture} alt="card image" fill></Image>
+          </ImageContainer>
+          <LinkText purple>
+            <h3>{card.linkText}</h3>
+            <BsArrowRight />
+          </LinkText>
         </Link>
       </Card>
     ) : (
       <Card key={card.subject}>
-        <ImageContainer>
-          <Image src={card.picture} alt="card image" fill></Image>
-        </ImageContainer>
-        <h3>{card.subject}</h3>
-        <h1>{card.title}</h1>
-
-        <Link href="">
-          <h3>{card.linkText}</h3>
-          <BsArrowRight />
+        <Link href="" key={card.subject}>
+          <ImageContainer>
+            <Image src={card.picture} alt="card image" fill></Image>
+          </ImageContainer>
+          <h3>{card.subject}</h3>
+          <h1>{card.title}</h1>
+          <LinkText>
+            <h3>{card.linkText}</h3>
+            <BsArrowRight />
+          </LinkText>
         </Link>
       </Card>
     )
