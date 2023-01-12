@@ -15,7 +15,7 @@ export default function DeepDive() {
   const diveMap = diveArray.map((card) =>
     card.purple ? (
       <Card purple key={card.subject}>
-        <Link href="" key={card.subject}>
+        <Link href={card.link}>
           <h3>{card.subject}</h3>
           <h1>{card.title}</h1>
           <ImageContainer purple>
@@ -29,7 +29,7 @@ export default function DeepDive() {
       </Card>
     ) : (
       <Card key={card.subject}>
-        <Link href="" key={card.subject}>
+        <Link href={card.link}>
           <ImageContainer>
             <Image src={card.picture} alt="card image" fill></Image>
           </ImageContainer>
