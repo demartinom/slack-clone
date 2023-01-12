@@ -45,6 +45,7 @@ export const FeaturesText = styled.div`
     font-size: 1.125rem;
   }
   a {
+    position: relative;
     margin-top: 1rem;
     display: flex;
     align-items: center;
@@ -52,5 +53,25 @@ export const FeaturesText = styled.div`
     font-size: 1.125rem;
     color: var(--color-link);
     font-weight: 500;
+    text-decoration: none;
+    z-index: 1;
+    display: inline-block;
+    &:before {
+      content: "";
+      position: absolute;
+      display: block;
+      width: 100%;
+      height: 0.15rem;
+      bottom: -0.15rem;
+      left: 0;
+      background-color: var(--color-link);
+      transform: scaleX(0);
+      transform-origin: top left;
+      transition: transform 0.3s ease;
+      z-index: -1;
+    }
+    &:hover::before {
+      transform: scaleX(1);
+    }
   }
 `;
