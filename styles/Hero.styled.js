@@ -55,6 +55,7 @@ export const GoogleButton = styled(Button)`
   background-color: #4285f4;
   color: white;
   padding: 0 16px 0 4px;
+  border: none;
   img {
     background-color: white;
     padding: 14px;
