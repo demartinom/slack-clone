@@ -28,6 +28,9 @@ export const NavigationColumn = styled.div`
   a {
     text-decoration: none;
     color: #454245;
+    &:hover {
+      color: var(--color-link);
+    }
   }
 `;
 
@@ -47,6 +50,9 @@ export const MetaSocial = styled.div`
     text-decoration: none;
     color: black;
     font-size: 0.875rem;
+    &:hover {
+      color: var(--color-link);
+    }
   }
 `;
 
