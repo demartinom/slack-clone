@@ -6,7 +6,7 @@ export const DeepDiveStyled = styled.div`
   flex-direction: column;
   align-items: center;
   padding-bottom: 4rem;
-  h1{
+  h1 {
     margin-bottom: 2rem;
     margin-top: 3rem;
   }
@@ -27,6 +27,7 @@ export const Card = styled.div`
     props.purple ? "var(--color-aubergine)" : "white"};
   color: ${(props) => (props.purple ? "white" : "black")};
   position: relative;
+  transition: all .25s;
   h1,
   h3 {
     padding: 0 12px;
@@ -58,6 +59,10 @@ export const Card = styled.div`
     svg {
       scale: 1.75;
     }
+  }
+  :hover {
+    scale: 1.05;
+    box-shadow: 0 0 2rem rgba(0, 0, 0, 0.2);
   }
 `;
 
