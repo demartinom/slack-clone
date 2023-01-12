@@ -14,20 +14,24 @@ export default function NavBar() {
   return (
     <NavBarStyled>
       <Navigation>
-        <Link href='https://slack.com'>
+        <Link href="https://slack.com">
           <Image src={logo} alt="slack logo"></Image>
         </Link>
         <Link href="">Product</Link>
-        <Link href="">Solutions</Link>
-        <Link href="">Enterprise</Link>
-        <Link href="">Resources</Link>
-        <Link href="">Pricing</Link>
+        <Link href="https://slack.com/solutions">Solutions</Link>
+        <Link href="https://slack.com/enterprise">Enterprise</Link>
+        <Link href="https://slack.com/resources">Resources</Link>
+        <Link href="https://slack.com/pricing">Pricing</Link>
       </Navigation>
       <ButtonContainer>
         <AiOutlineSearch />
-        <Link href="">Sign In</Link>
-        <PurpleBackButton primary>TALK TO SALES</PurpleBackButton>
-        <PurpleBackButton>TRY FOR FREE</PurpleBackButton>
+        <Link href="https://slack.com/signin">Sign In</Link>
+        <Link href="https://slack.com/contact-sales">
+          <PurpleBackButton primary>TALK TO SALES</PurpleBackButton>
+        </Link>
+        <Link href="https://slack.com/get-started">
+          <PurpleBackButton>TRY FOR FREE</PurpleBackButton>
+        </Link>
       </ButtonContainer>
     </NavBarStyled>
   );
