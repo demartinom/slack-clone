@@ -64,8 +64,7 @@ export const Button = styled.button`
 export const PurpleBackButton = styled(Button)`
   border: ${(props) =>
     props.primary ? "1px solid white" : "1px solid var(--color-aubergine)"};
-      padding: 19px 40px 20px 40px;
-
+  padding: ${(props) => (props.hero ? "19px 40px 20px 40px;" : "")};
 `;
 
 export const ButtonLarge = styled(Button)`

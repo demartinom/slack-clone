@@ -21,9 +21,9 @@ export default function Hero() {
           With all your people, tools and communication in one place, you can
           work faster and more flexibly than ever before.
         </p>
-        <ButtonContainer>
-          <PurpleBackButton>SIGN UP WITH EMAIL</PurpleBackButton>
-          <GoogleButton>
+        <ButtonContainer >
+          <PurpleBackButton hero>SIGN UP WITH EMAIL</PurpleBackButton>
+          <GoogleButton hero>
             <Image src={googleLogo} alt="google logo"></Image>SIGN UP WITH
             GOOGLE
           </GoogleButton>
