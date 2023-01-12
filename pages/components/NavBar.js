@@ -8,21 +8,24 @@ import logo from "../../public/assets/logo.svg";
 import Image from "next/image";
 import { AiOutlineSearch } from "react-icons/ai";
 import { PurpleBackButton } from "../../styles/SharedStyles.styled";
+import Link from "next/link";
 
 export default function NavBar() {
   return (
     <NavBarStyled>
       <Navigation>
-      <Image src={logo} alt="slack logo"></Image>
-        <li>Product</li>
-        <li>Solutions</li>
-        <li>Enterprise</li>
-        <li>Resources</li>
-        <li>Pricing</li>
+        <Link href='https://slack.com'>
+          <Image src={logo} alt="slack logo"></Image>
+        </Link>
+        <Link href="">Product</Link>
+        <Link href="">Solutions</Link>
+        <Link href="">Enterprise</Link>
+        <Link href="">Resources</Link>
+        <Link href="">Pricing</Link>
       </Navigation>
       <ButtonContainer>
-      <AiOutlineSearch />
-      <h3>Sign In</h3>
+        <AiOutlineSearch />
+        <Link href="">Sign In</Link>
         <PurpleBackButton primary>TALK TO SALES</PurpleBackButton>
         <PurpleBackButton>TRY FOR FREE</PurpleBackButton>
       </ButtonContainer>
