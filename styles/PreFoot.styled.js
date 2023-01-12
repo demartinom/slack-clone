@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { ButtonLarge, PurpleBackButton } from "./SharedStyles.styled";
+import { PurpleBackButton } from "./SharedStyles.styled";
 
 export const PreFootStyled = styled.div`
   background-color: var(--color-aubergine);
