@@ -58,6 +58,7 @@ export const Button = styled.button`
   padding: 12px 16px;
   letter-spacing: 0.8px;
   border: none;
+  cursor: pointer;
 `;
 
 export const PurpleBackButton = styled(Button)`
