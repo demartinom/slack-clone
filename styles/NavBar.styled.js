@@ -8,9 +8,14 @@ export const NavBarStyled = styled.nav`
   justify-content: space-between;
   align-items: center;
   width: 100%;
-  h3 {
-    color: white;
+  a {
+    color: #fff;
+    font-weight: 700;
     font-size: 0.9rem;
+    text-decoration: none;
+    :hover{
+      text-decoration: underline;
+    }
   }
   svg {
     color: white;
@@ -24,11 +29,6 @@ export const Navigation = styled.ul`
   align-items: center;
   list-style: none;
   gap: 1.75rem;
-  li {
-    color: #fff;
-    font-weight: 700;
-    font-size: 0.9rem;
-  }
 `;
 
 export const ButtonContainer = styled.div`
