@@ -39,13 +39,26 @@ export const ButtonContainer = styled.div`
 
 export const Dropdown = styled.div`
   position: relative;
+  div {
+    top: 0;
+  }
+  &:hover {
+    div {
+      top: 25px;
+      visibility: visible;
+      opacity: 1;
+    }
+  }
 `;
 
 export const ProductList = styled.div`
+  transition: all 0.25s;
   position: absolute;
   background-color: white;
   display: flex;
   flex-direction: column;
+  visibility: hidden;
+  opacity: 0;
   a {
     color: grey;
     &:hover {
@@ -53,5 +66,10 @@ export const ProductList = styled.div`
       color: white;
       text-decoration: none;
     }
+  }
+  &:hover {
+    top: 25px;
+    visibility: visible;
+    opacity: 1;
   }
 `;
