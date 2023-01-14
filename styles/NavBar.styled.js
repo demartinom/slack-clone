@@ -90,6 +90,10 @@ export const ProductList = styled.div`
       }
     }
   }
+  hr {
+    background-color: grey;
+    height: 1px;
+  }
   &:hover {
     top: 25px;
     visibility: visible;
