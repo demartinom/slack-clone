@@ -13,22 +13,15 @@ import { PurpleBackButton } from "../../styles/SharedStyles.styled";
 import Link from "next/link";
 
 export default function NavBar() {
-  let [visible, setVisible] = React.useState(0);
-  function showDropdown() {
-    setVisible(1);
-  }
-  function hideDropdown() {
-    setVisible(0);
-  }
   return (
     <NavBarStyled>
       <Navigation>
         <Link href="https://slack.com">
           <Image src={logo} alt="slack logo"></Image>
         </Link>
-        <Dropdown onMouseEnter={showDropdown} onMouseLeave={hideDropdown}>
+        <Dropdown>
           <Link href="">Product</Link>
-          <ProductList style={{ opacity: visible }}>
+          <ProductList>
             <Link href="">Features</Link>
             <Link href="">Channels</Link>
             <Link href="">Digital HQ</Link>
