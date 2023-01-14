@@ -106,13 +106,15 @@ export default function TeamsSales() {
       <Testimonial>
         <VideoContainer>
           <Image src={playButton} alt="play button"></Image>
-          <video
-            loop
-            autoPlay
-            playsInline
-            muted
-            src="/assets/videos/customer.mp4"
-          ></video>
+          <Link href="https://www.youtube.com/embed/IDrUzXubiiQ">
+            <video
+              loop
+              autoPlay
+              playsInline
+              muted
+              src="/assets/videos/customer.mp4"
+            ></video>
+          </Link>
         </VideoContainer>
         <TestimonialText>
           <h2>
