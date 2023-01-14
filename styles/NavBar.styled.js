@@ -37,6 +37,21 @@ export const ButtonContainer = styled.div`
   gap: 1.5rem;
 `;
 
-export const Dropdown = styled.div``;
+export const Dropdown = styled.div`
+  position: relative;
+`;
 
-export const ProductList = styled.ul``;
+export const ProductList = styled.div`
+  position: absolute;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  a {
+    color: grey;
+    &:hover {
+      background-color: var(--color-link);
+      color: white;
+      text-decoration: none;
+    }
+  }
+`;
