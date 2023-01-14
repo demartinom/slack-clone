@@ -3,6 +3,8 @@ import {
   NavBarStyled,
   Navigation,
   ButtonContainer,
+  Dropdown,
+  ProductList,
 } from "../../styles/NavBar.styled";
 import logo from "../../public/assets/logo.svg";
 import Image from "next/image";
@@ -17,7 +19,20 @@ export default function NavBar() {
         <Link href="https://slack.com">
           <Image src={logo} alt="slack logo"></Image>
         </Link>
-        <Link href="">Product</Link>
+        <Dropdown>
+          Product
+          <ProductList>
+            <li>Features</li>
+            <li>Channels</li>
+            <li>Digital HQ</li>
+            <li>Integrations</li>
+            <li>Security</li>
+            <li>Slack Conncet</li>
+            <li>Customers</li>
+            <hr />
+            <li>Download Slack</li>
+          </ProductList>
+        </Dropdown>
         <Link href="https://slack.com/solutions">Solutions</Link>
         <Link href="https://slack.com/enterprise">Enterprise</Link>
         <Link href="https://slack.com/resources">Resources</Link>

@@ -13,7 +13,7 @@ export const NavBarStyled = styled.nav`
     font-weight: 700;
     font-size: 0.9rem;
     text-decoration: none;
-    :hover{
+    :hover {
       text-decoration: underline;
     }
   }
@@ -36,3 +36,7 @@ export const ButtonContainer = styled.div`
   align-items: center;
   gap: 1.5rem;
 `;
+
+export const Dropdown = styled.div``;
+
+export const ProductList = styled.ul``;
