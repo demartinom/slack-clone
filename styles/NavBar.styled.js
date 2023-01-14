@@ -85,6 +85,9 @@ export const ProductList = styled.div`
       background-color: var(--color-link);
       color: white;
       text-decoration: none;
+      svg {
+        color: white;
+      }
     }
   }
   &:hover {
