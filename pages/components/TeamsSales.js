@@ -105,8 +105,8 @@ export default function TeamsSales() {
       ></Image>
       <Testimonial>
         <VideoContainer>
-          <Image src={playButton} alt="play button"></Image>
           <Link href="https://www.youtube.com/embed/IDrUzXubiiQ">
+          <Image src={playButton} alt="play button"></Image>
             <video
               loop
               autoPlay
