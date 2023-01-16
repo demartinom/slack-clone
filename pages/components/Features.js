@@ -7,8 +7,8 @@ import {
   FeatureContainer,
   FeaturesText,
 } from "../../styles/Features.styled";
-import logos from "./logosArray";
-import featuresArray from "./featuresArray";
+import logos from "../../public/arrays/logosArray";
+import featuresArray from "../../public/arrays/featuresArray";
 import Link from "next/link";
 import { BsArrowRight } from "react-icons/bs";
 

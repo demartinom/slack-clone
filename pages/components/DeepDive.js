@@ -5,7 +5,7 @@ import {
   ImageContainer,
   LinkText,
 } from "../../styles/DeepDive.styled";
-import diveArray from "./diveArray";
+import diveArray from "../../public/arrays/diveArray";
 import Image from "next/image";
 import { BsArrowRight } from "react-icons/bs";
 import { Card } from "../../styles/DeepDive.styled";
