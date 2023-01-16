@@ -11,7 +11,11 @@ import Image from "next/image";
 import { AiOutlineSearch } from "react-icons/ai";
 import { PurpleBackButton } from "../../styles/SharedStyles.styled";
 import Link from "next/link";
-import { AiOutlineDown, AiOutlineUp, AiOutlineCloudDownload } from "react-icons/ai";
+import {
+  AiOutlineDown,
+  AiOutlineUp,
+  AiOutlineCloudDownload,
+} from "react-icons/ai";
 
 export default function NavBar() {
   const [arrowDirection, setArrowDirection] = React.useState(false);
@@ -32,15 +36,15 @@ export default function NavBar() {
             Product {arrowDirection ? <AiOutlineUp /> : <AiOutlineDown />}
           </Link>
           <ProductList>
-            <Link href="">Features</Link>
-            <Link href="">Channels</Link>
-            <Link href="">Digital HQ</Link>
-            <Link href="">Integrations</Link>
-            <Link href="">Security</Link>
-            <Link href="">Slack Connect</Link>
-            <Link href="">Customers</Link>
+            <Link href="https://slack.com/features">Features</Link>
+            <Link href="https://slack.com/features/channels">Channels</Link>
+            <Link href="https://slack.com/digital-hq">Digital HQ</Link>
+            <Link href="https://slack.com/integrations">Integrations</Link>
+            <Link href="https://slack.com/security">Security</Link>
+            <Link href="https://slack.com/connect">Slack Connect</Link>
+            <Link href="https://slack.com/customers">Customers</Link>
             <hr />
-            <Link href="">
+            <Link href="https://slack.com/download">
               <AiOutlineCloudDownload />
               Download Slack
             </Link>
