@@ -29,6 +29,9 @@ export const Navigation = styled.ul`
   align-items: center;
   list-style: none;
   gap: 1.75rem;
+  img {
+    margin-top: 0.4rem;
+  }
 `;
 
 export const ButtonContainer = styled.div`
@@ -41,6 +44,7 @@ export const Dropdown = styled.div`
   position: relative;
   div {
     top: 0;
+    left: -20px;
   }
   &:hover {
     div {
@@ -69,9 +73,9 @@ export const ProductList = styled.div`
   a {
     color: black;
     font-weight: 400;
-    padding: 0.25rem 0 0.5rem 0.25rem;
+    padding: 0.5rem 0 0.75rem 1.25rem;
     font-size: 0.9rem;
-    width: 12rem;
+    width: 15rem;
     display: flex;
     align-items: center;
     gap: 2px;
