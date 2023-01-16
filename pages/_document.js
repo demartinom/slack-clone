@@ -27,6 +27,7 @@ export default class MyDocument extends Document {
       <Html>
         <Head>
           <link rel="stylesheet" href="https://use.typekit.net/wuj4yik.css" />
+          <link rel="icon" src="/assets/favicon.ico" />
         </Head>
         <body>
           <Main />
