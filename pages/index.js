@@ -7,15 +7,17 @@ import DeepDive from "./components/DeepDive";
 import PreFoot from "./components/PreFoot";
 import Footer from "./components/Footer";
 import Head from "next/head";
+import { useWindowWidth } from "@react-hook/window-size";
 
 export default function Home() {
+  const width = useWindowWidth()
   return (
     <>
       <GlobalStyles />
       <Head>
         <title>Slack is your ditigal HQ | Slack</title>
       </Head>
-      <NavBar />
+      <NavBar width={width} />
       <Hero />
       <Features />
       <TeamsSales />
