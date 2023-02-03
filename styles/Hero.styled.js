@@ -11,7 +11,6 @@ export const HeroStyled = styled.div`
     flex-direction: column;
     padding: 0;
     text-align: center;
-    overflow-x: visible;
   }
 `;
 
@@ -56,9 +55,13 @@ export const VideoContainer = styled.div`
     width: 700px;
   }
   ${sizes.mobile} {
+    margin-top: 2rem;
+    height: 340px;
+    width: 500px;
+    overflow: hidden;
     video {
-      width: 400px;
-      position: static;
+      width: 700px;
+      right: -130px;
     }
   }
 `;
