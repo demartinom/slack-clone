@@ -11,6 +11,7 @@ export const HeroStyled = styled.div`
     flex-direction: column;
     padding: 0;
     text-align: center;
+    overflow-x: visible;
   }
 `;
 
@@ -36,6 +37,15 @@ export const HeroText = styled.div`
       font-weight: 700;
     }
   }
+  ${sizes.mobile} {
+    h1 {
+      font-size: 2.75rem;
+      line-height: 1.06;
+    }
+    p {
+      margin-bottom: 56px;
+    }
+  }
 `;
 
 export const VideoContainer = styled.div`
@@ -44,6 +54,12 @@ export const VideoContainer = styled.div`
     position: absolute;
     right: -50px;
     width: 700px;
+  }
+  ${sizes.mobile} {
+    video {
+      width: 400px;
+      position: static;
+    }
   }
 `;
 
