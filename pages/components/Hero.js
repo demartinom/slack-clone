@@ -11,7 +11,7 @@ import googleLogo from "../../public/assets/google-logo.svg";
 import Image from "next/image";
 import Link from "next/link";
 
-export default function Hero() {
+export default function Hero(props) {
   return (
     <HeroStyled>
       <HeroText>
@@ -22,14 +22,22 @@ export default function Hero() {
           With all your people, tools and communication in one place, you can
           work faster and more flexibly than ever before.
         </p>
+
         <ButtonContainer>
-          <Link href="https://slack.com/get-started">
-            <PurpleBackButton hero>SIGN UP WITH EMAIL</PurpleBackButton>
-          </Link>
-          <GoogleButton hero>
-            <Image src={googleLogo} alt="google logo"></Image>SIGN UP WITH
-            GOOGLE
-          </GoogleButton>
+          {props.width > 425 && (
+            <>
+              <Link href="https://slack.com/get-started">
+                <PurpleBackButton hero>SIGN UP WITH EMAIL</PurpleBackButton>
+              </Link>
+              <GoogleButton hero>
+                <Image src={googleLogo} alt="google logo"></Image>SIGN UP WITH
+                GOOGLE
+              </GoogleButton>
+            </>
+          )}
+          {props.width <= 425 && (
+            <PurpleBackButton>GET SLACK FOR ANDROID</PurpleBackButton>
+          )}
         </ButtonContainer>
         <p>
           <span>Slack is free to try</span> for as long as you&#39;d like
