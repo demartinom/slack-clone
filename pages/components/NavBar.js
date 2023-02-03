@@ -74,8 +74,10 @@ export default function NavBar(props) {
           <Link href="https://slack.com">
             <Image src={logo} alt="slack logo"></Image>
           </Link>
-          <AiOutlineSearch />
-          <AiOutlineMenu />
+          <ButtonContainer>
+            <AiOutlineSearch />
+            <AiOutlineMenu />
+          </ButtonContainer>
         </>
       )}
     </NavBarStyled>
