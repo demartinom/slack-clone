@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import { createGlobalStyle } from "styled-components";
+import sizes from "./mediaQueries";
 
 const GlobalStyles = createGlobalStyle`
   * {
@@ -71,6 +72,9 @@ export const PurpleBackButton = styled(Button)`
     outline: ${(props) =>
       props.primary ? "2px solid white" : "2px solid var(--color-aubergine)"};
     outline-offset: -2px;
+  }
+  ${sizes.mobile} {
+    width: 95%;
   }
 `;
 
