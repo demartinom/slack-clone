@@ -39,9 +39,11 @@ export default function Hero(props) {
             <PurpleBackButton>GET SLACK FOR ANDROID</PurpleBackButton>
           )}
         </ButtonContainer>
-        <p>
-          <span>Slack is free to try</span> for as long as you&#39;d like
-        </p>
+        {props.width > 425 && (
+          <p>
+            <span>Slack is free to try</span> for as long as you&#39;d like
+          </p>
+        )}
       </HeroText>
       <VideoContainer>
         <video
