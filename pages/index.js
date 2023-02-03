@@ -13,7 +13,7 @@ export default function Home() {
     <>
       <GlobalStyles />
       <Head>
-        <title>Slack is your ditigal HQ | Slack</title>
+        <title>Slack is your digital HQ | Slack</title>
       </Head>
       <NavBar />
       <Hero />
