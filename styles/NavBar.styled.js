@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import sizes from "./mediaQueries";
 
 export const NavBarStyled = styled.nav`
   height: 5rem;
@@ -21,6 +22,9 @@ export const NavBarStyled = styled.nav`
     color: white;
     width: 1.25rem;
     height: 1.25rem;
+  }
+  ${sizes.mobile} {
+    padding: 0 32px;
   }
 `;
 
