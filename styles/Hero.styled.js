@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import sizes from "./mediaQueries";
 import { Button } from "./SharedStyles.styled";
 
 export const HeroStyled = styled.div`
@@ -6,6 +7,11 @@ export const HeroStyled = styled.div`
   padding: 2rem 0 6rem 6.5rem;
   display: flex;
   overflow-x: hidden;
+  ${sizes.mobile} {
+    flex-direction: column;
+    padding: 0;
+    text-align: center;
+  }
 `;
 
 export const HeroText = styled.div`
@@ -46,6 +52,10 @@ export const ButtonContainer = styled.div`
   gap: 8px;
   margin-top: 4rem;
   margin-bottom: 1rem;
+  ${sizes.mobile} {
+    margin: 0;
+    justify-content: center;
+  }
 `;
 
 export const GoogleButton = styled(Button)`
