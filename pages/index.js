@@ -10,20 +10,20 @@ import Head from "next/head";
 import { useWindowWidth } from "@react-hook/window-size";
 
 export default function Home() {
-  const width = useWindowWidth()
+  const width = useWindowWidth();
   return (
     <>
       <GlobalStyles />
       <Head>
-        <title>Slack is your ditigal HQ | Slack</title>
+        <title>Slack is your digital HQ | Slack</title>
       </Head>
       <NavBar width={width} />
-      <Hero />
-      <Features />
+      <Hero width={width} />
+      {/*  <Features />
       <TeamsSales />
       <DeepDive />
       <PreFoot />
-      <Footer />
+      <Footer /> */}
     </>
   );
 }
