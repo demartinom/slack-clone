@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import sizes from "./mediaQueries";
 
 export const FeaturesStyled = styled.div`
   background-color: var(--color-beige);
@@ -32,6 +33,9 @@ export const FeatureContainer = styled.div`
   padding-bottom: 3rem;
   video {
     width: 600px;
+  }
+  ${sizes.mobile} {
+    flex-direction: column;
   }
 `;
 
