@@ -49,7 +49,7 @@ export default function Features(props) {
   );
   const featuresMobile = featuresArray.map((feature) => (
     <FeatureContainer key={feature.id}>
-      <video loop autoPlay playsInline muted src={feature.video}></video>
+      <video loop autoPlay playsInline muted src={feature.mobile}></video>
       <FeaturesText>
         <h1>{feature.title}</h1>
         <p>{feature.body}</p>
