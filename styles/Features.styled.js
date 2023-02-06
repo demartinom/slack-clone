@@ -23,6 +23,11 @@ export const Logos = styled.div`
   display: flex;
   align-items: center;
   gap: 4rem;
+  ${sizes.mobile} {
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: center;
+  }
 `;
 
 export const FeatureContainer = styled.div`
@@ -36,6 +41,9 @@ export const FeatureContainer = styled.div`
   }
   ${sizes.mobile} {
     flex-direction: column;
+    video {
+      width: 400px;
+    }
   }
 `;
 
@@ -76,6 +84,12 @@ export const FeaturesText = styled.div`
     }
     &:hover::before {
       transform: scaleX(1);
+    }
+  }
+  ${sizes.mobile} {
+    width: 100%;
+    h1 {
+      font-size: 2rem;
     }
   }
 `;
