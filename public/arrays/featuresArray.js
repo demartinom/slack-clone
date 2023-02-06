@@ -5,6 +5,7 @@ const featuresArray = [
     body: "At the heart of Slack are channels: organized spaces for everyone and everything you need for work. In channels, it’s easier to connect across departments, offices, time zones and even other companies.",
     learnMore: "channels",
     video: "/assets/videos/workChannels.mp4",
+    mobile: "/assets/videos/team_mobile.mp4",
   },
   {
     id: 1,
@@ -12,6 +13,7 @@ const featuresArray = [
     body: "In Slack, you’ve got all the flexibility to work when, where and how it’s best for you. You can easily chat, send audio and video clips, or hop on a huddle to talk things out live.",
     learnMore: "flexible communication",
     video: "/assets/videos/huddle.mp4",
+    mobile: "/assets/videos/howtowork_mobile.mp4",
   },
   {
     id: 2,
@@ -19,6 +21,7 @@ const featuresArray = [
     body: "With your other work apps connected to Slack, you can work faster by switching tabs less. And with powerful tools like Workflow Builder, you can automate away routine tasks.",
     learnMore: "the Slack platform",
     video: "/assets/videos/workday.mp4",
+    mobile: "/assets/videos/tools_mobile.mp4",
   },
 ];
 
