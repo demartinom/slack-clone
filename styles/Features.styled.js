@@ -41,8 +41,18 @@ export const FeatureContainer = styled.div`
   }
   ${sizes.mobile} {
     flex-direction: column;
+    margin: 4rem 0 0 0;
+    padding: 0;
+    gap: 0rem;
+    align-items: flex-start;
     video {
-      width: 400px;
+      width: 408px;
+      height: 388px;
+    }
+    &:nth-of-type(3) {
+      video {
+        align-self: flex-end;
+      }
     }
   }
 `;
@@ -88,7 +98,12 @@ export const FeaturesText = styled.div`
   }
   ${sizes.mobile} {
     width: 100%;
+    margin: 32px 0 0 0;
+    padding-left: 16px;
     h1 {
+      font-weight: 700;
+      line-height: 1.1875;
+      margin-bottom: 1rem;
       font-size: 2rem;
     }
   }
