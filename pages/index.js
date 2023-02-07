@@ -17,11 +17,11 @@ export default function Home() {
       <Head>
         <title>Slack is your digital HQ | Slack</title>
       </Head>
-      <NavBar width={width} />
-      <Hero width={width} />
-      {/*  <Features />
-      <TeamsSales />
-      <DeepDive />
+      {/* <NavBar width={width} />
+      <Hero width={width} /> 
+      <Features width={width} />*/}
+      <TeamsSales width={width} />
+      {/* <DeepDive />
       <PreFoot />
       <Footer /> */}
     </>
