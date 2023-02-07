@@ -19,12 +19,27 @@ export const TeamsSalesStyled = styled.div`
   p {
     font-size: 0.875rem;
   }
+  ${sizes.mobile} {
+    text-align: center;
+    h1 {
+      font-size: 2rem;
+      padding: 0 17px;
+    }
+    h3 {
+      padding: 0 28px;
+    }
+  }
 `;
 
 export const Statistics = styled.div`
   display: flex;
   gap: 13rem;
   margin-bottom: 8rem;
+  ${sizes.mobile} {
+    flex-direction: column;
+    gap: 2rem;
+    margin-bottom: 4rem;
+  }
 `;
 
 export const SingleStat = styled.div`
@@ -36,6 +51,12 @@ export const SingleStat = styled.div`
     font-size: 4rem;
     color: var(--color-aubergine);
   }
+  ${sizes.mobile} {
+    align-items: center;
+    h2 {
+      font-size: 3rem;
+    }
+  }
 `;
 
 export const ButtonContainer = styled.div`
@@ -44,12 +65,16 @@ export const ButtonContainer = styled.div`
   margin-bottom: 5rem;
   ${sizes.mobile} {
     flex-direction: column;
+    width: 90%;
   }
 `;
 
 export const Testimonial = styled.div`
   display: flex;
   gap: 3rem;
+  ${sizes.mobile} {
+    flex-direction: column;
+  }
 `;
 
 export const VideoContainer = styled.div`
@@ -69,6 +94,14 @@ export const VideoContainer = styled.div`
     cursor: pointer;
     :hover {
       filter: brightness(50%);
+    }
+  }
+  ${sizes.mobile} {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    video {
+      width: 25rem;
     }
   }
 `;
@@ -94,6 +127,16 @@ export const TestimonialText = styled.div`
     font-size: 1.125rem;
     color: var(--color-link);
     font-weight: 500;
+  }
+  ${sizes.mobile} {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: start;
+    padding: 32px 40px 32px 32px;
+    h2 {
+      font-size: 1.375rem;
+    }
   }
 `;
 
