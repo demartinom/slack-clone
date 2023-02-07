@@ -21,7 +21,7 @@ import playButton from "../../public/assets/playButton.svg";
 import Link from "next/link";
 import { BsArrowRight } from "react-icons/bs";
 
-export default function TeamsSales() {
+export default function TeamsSales(props) {
   return (
     <TeamsSalesStyled>
       <h1>Teams large and small rely on Slack</h1>
@@ -47,66 +47,70 @@ export default function TeamsSales() {
           <p>feel more connected to their teams*</p>
         </SingleStat>
       </Statistics>
-      <Image
-        src={officeEmoji}
-        alt="office"
-        style={{
-          position: "absolute",
-          left: "150px",
-          top: "40px",
-        }}
-      ></Image>
-      <Image
-        src={chartEmoji}
-        alt="chart"
-        style={{
-          position: "absolute",
-          left: "90px",
-          top: "160px",
-        }}
-      ></Image>
-      <Image
-        src={lockEmoji}
-        alt="lock"
-        style={{
-          position: "absolute",
-          left: "190px",
-          top: "250px",
-        }}
-      ></Image>
-      <Image
-        src={skylineEmoji}
-        alt="skyline"
-        style={{
-          position: "absolute",
-          right: "150px",
-          top: "40px",
-          height: "44px",
-          width: "73px",
-        }}
-      ></Image>
-      <Image
-        src={handshakeEmoji}
-        alt="handshake"
-        style={{
-          position: "absolute",
-          right: "190px",
-          top: "160px",
-        }}
-      ></Image>
-      <Image
-        src={womanEmoji}
-        alt="woman"
-        style={{
-          position: "absolute",
-          right: "90px",
-          top: "250px",
-        }}
-      ></Image>
+      {props.width > 425 && (
+        <>
+          <Image
+            src={officeEmoji}
+            alt="office"
+            style={{
+              position: "absolute",
+              left: "150px",
+              top: "40px",
+            }}
+          ></Image>
+          <Image
+            src={chartEmoji}
+            alt="chart"
+            style={{
+              position: "absolute",
+              left: "90px",
+              top: "160px",
+            }}
+          ></Image>
+          <Image
+            src={lockEmoji}
+            alt="lock"
+            style={{
+              position: "absolute",
+              left: "190px",
+              top: "250px",
+            }}
+          ></Image>
+          <Image
+            src={skylineEmoji}
+            alt="skyline"
+            style={{
+              position: "absolute",
+              right: "150px",
+              top: "40px",
+              height: "44px",
+              width: "73px",
+            }}
+          ></Image>
+          <Image
+            src={handshakeEmoji}
+            alt="handshake"
+            style={{
+              position: "absolute",
+              right: "190px",
+              top: "160px",
+            }}
+          ></Image>
+          <Image
+            src={womanEmoji}
+            alt="woman"
+            style={{
+              position: "absolute",
+              right: "90px",
+              top: "250px",
+            }}
+          ></Image>
+        </>
+      )}
       <Testimonial>
         <VideoContainer>
           <Link href="https://www.youtube.com/embed/IDrUzXubiiQ">
-          <Image src={playButton} alt="play button"></Image>
+            <Image src={playButton} alt="play button"></Image>
             <video
               loop
               autoPlay
