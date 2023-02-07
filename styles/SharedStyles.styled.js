@@ -81,7 +81,8 @@ export const PurpleBackButton = styled(Button)`
 export const ButtonLarge = styled(Button)`
   padding: 19px 40px 20px 40px;
   background-color: ${(props) => (props.primary ? "var(--color-null)" : "")};
-  outline: ${(props) => (props.primary ? "" : "1px solid var(--color-aubergine)")};
+  outline: ${(props) =>
+    props.primary ? "" : "1px solid var(--color-aubergine)"};
   transition: all 0.3s;
   :hover {
     background-color: ${(props) =>
