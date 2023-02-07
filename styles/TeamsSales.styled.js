@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import sizes from "./mediaQueries";
 
 export const TeamsSalesStyled = styled.div`
   display: flex;
@@ -41,6 +42,9 @@ export const ButtonContainer = styled.div`
   display: flex;
   gap: 0.5rem;
   margin-bottom: 5rem;
+  ${sizes.mobile} {
+    flex-direction: column;
+  }
 `;
 
 export const Testimonial = styled.div`
