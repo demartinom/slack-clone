@@ -2,9 +2,8 @@ import React from "react";
 import {
   PreFootButtonsContainer,
   PreFootStyled,
+  PreFootButtons,
 } from "../../styles/PreFoot.styled";
-import { PurpleBackButton } from "../../styles/SharedStyles.styled";
-import { PreFootButtons } from "../../styles/PreFoot.styled";
 
 export default function PreFoot() {
   return (
